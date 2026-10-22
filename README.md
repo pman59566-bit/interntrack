@@ -2,7 +2,7 @@
 
 Every internship application in one list, for third-year IE students applying for internships.
 
-**Live site:** _coming soon (add your https://<project-name>.vercel.app link here)_
+**Live site:** https://interntrack-omega-ivory.vercel.app
 
 > Student project, not an official IE University service.
 
