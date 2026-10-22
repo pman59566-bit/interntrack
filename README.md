@@ -54,6 +54,7 @@ Every time you push to GitHub, Vercel updates the site automatically.
 | `proxy.js` | Runs before each page: keeps the login fresh and sends logged-out visitors from `/app` to `/login` |
 | `lib/supabase/` | Connects to Supabase from the browser and from the server (`config.js` reads the two keys) |
 | `supabase/schema.sql` | The database table and its Row Level Security rules |
+| `vercel.json` | Runs the server code in Vercel's Stockholm region (`arn1`), next to the Supabase database, so data stays in Europe |
 | `CLAUDE.md` | The EdTech Challenge grading contract |
 
 ## Privacy
