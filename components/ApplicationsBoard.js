@@ -144,6 +144,7 @@ export default function ApplicationsBoard({ initialApplications }) {
                   {/* aria-label: the name screen readers hear, so the title isn't repeated on the page */}
                   <select
                     className="status-select"
+                    data-status={app.status}
                     aria-label={"Status of " + app.title}
                     value={app.status}
                     onChange={(event) => handleStatusChange(app.id, event.target.value)}

@@ -12,15 +12,19 @@ export default function HomePage() {
   return (
     <div className="landing">
       <section className="hero" aria-labelledby="hero-heading">
-        <p className="eyebrow">For third-year IE students applying for internships</p>
+        <p className="eyebrow">For third-year IE University students applying for internships</p>
         <h1 id="hero-heading">Every internship application in one list</h1>
         <p className="lead">
-          Add each application in seconds, update its status as you hear back, and always know who to follow up
-          with. No more digging through emails and spreadsheets.
+          Add each application in seconds, update its status as you hear back, and see where you stand at a glance,
+          instead of in a messy spreadsheet.
         </p>
         <Link href="/signup" className="button button-large">
           Sign up free
         </Link>
+        {/* Said near the button too, so nobody mistakes this for an official IE tool */}
+        <p className="small-print">
+          A free student project, not an official IE University service. Only you can see your list.
+        </p>
         <p className="small-print">
           Already have an account? <Link href="/login">Log in</Link>
         </p>
@@ -34,7 +38,9 @@ export default function HomePage() {
           {EXAMPLE_APPLICATIONS.map((app) => (
             <li key={app.title} className="application">
               <p className="application-title">{app.title}</p>
-              <p className="status-tag">{app.status}</p>
+              <p className="status-tag" data-status={app.status}>
+                {app.status}
+              </p>
             </li>
           ))}
         </ul>

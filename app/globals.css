@@ -72,6 +72,7 @@ h2 {
 
 h1 {
   font-size: 2rem;
+  text-wrap: balance; /* spreads words evenly over the lines, so no word sits alone on the last line */
 }
 
 h2 {
@@ -324,7 +325,30 @@ select {
   font-weight: 600;
   color: var(--color-heading);
   background-color: var(--color-surface-light);
+  border: 2px solid var(--color-heading);
   border-radius: var(--radius);
+}
+
+/* Each status has its own look (the word is always shown too, so it never relies on colour alone).
+   Used by the example tags on the landing page and the status dropdowns on /app. */
+[data-status="Applied"] {
+  color: var(--color-heading);
+  background-color: var(--color-surface);
+}
+
+[data-status="Interview"] {
+  color: var(--color-heading);
+  background-color: var(--color-surface-light);
+}
+
+[data-status="Offer"] {
+  color: var(--color-button-text);
+  background-color: var(--color-button);
+}
+
+[data-status="Rejected"] {
+  color: var(--color-text);
+  background-color: var(--color-page);
 }
 
 .steps {
