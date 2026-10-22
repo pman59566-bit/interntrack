@@ -429,6 +429,7 @@ select {
 .status-select {
   width: auto;
   flex: 1 1 10rem;
+  max-width: 16rem; /* fills the row on phones, stays a sensible size on laptops */
 }
 
 /* ---------- 9. Wider screens ---------- */
